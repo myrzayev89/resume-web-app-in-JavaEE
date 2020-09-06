@@ -39,22 +39,27 @@
         <div class="col-lg-6">
             <form action="index" method="POST">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-2">
                         <div class="form-group">
                             <input type="text" name="name" class="form-control" placeholder="Name">
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-2">
                         <div class="form-group">
                             <input type="text" name="surname" class="form-control" placeholder="Surname">
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-2">
                         <div class="form-group">
-                            <input type="text" name="password" class="form-control" placeholder="Password">
+                            <input type="text" name="username" class="form-control" placeholder="Username">
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-2">
+                        <div class="form-group">
+                            <input type="password" name="password" class="form-control" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
                         <button type="submit" class="btn btn-outline-success">Add</button>
                     </div>
                 </div>
