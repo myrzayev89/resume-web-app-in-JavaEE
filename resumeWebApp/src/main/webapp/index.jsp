@@ -51,7 +51,7 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="form-group">
-                            <input type="password" name="password" class="form-control" placeholder="Password">
+                            <input type="text" name="password" class="form-control" placeholder="Password">
                         </div>
                     </div>
                     <div class="col-lg-3">

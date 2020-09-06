@@ -41,7 +41,8 @@ public class IndexController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String name = req.getParameter("name");
         String surname = req.getParameter("surname");
-        User u = new User(0,name,surname,null,null,null,null,null,null,null);
+        String password = req.getParameter("password");
+        User u = new User(0,name,surname,null,null,null,null,null,null,null, password);
         userDao.addUser(u);
         resp.sendRedirect("index");
     }
