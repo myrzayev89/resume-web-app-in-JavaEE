@@ -43,7 +43,7 @@ public class IndexController extends HttpServlet {
 //        String surname = req.getParameter("surname");
 //        String username = req.getParameter("username");
 //        String password = req.getParameter("password");
-//        User u = new User(0,name,surname,null,null,null,null,null,null,null, password, username);
+//        User u = new User(0,name,surname,null,null,null,null,null,null,null,password,username);
 //        userDao.addUser(u);
 //        resp.sendRedirect("index");
 //    }
