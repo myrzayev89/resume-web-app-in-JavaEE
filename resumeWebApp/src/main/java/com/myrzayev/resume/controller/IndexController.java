@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "IndexController", urlPatterns = {"/"})
+@WebServlet(name = "IndexController", urlPatterns = {"/index"})
 public class IndexController extends HttpServlet {
 
     @Override
@@ -45,6 +45,6 @@ public class IndexController extends HttpServlet {
 //        String password = req.getParameter("password");
 //        User u = new User(0,name,surname,null,null,null,null,null,null,null, password, username);
 //        userDao.addUser(u);
-//        resp.sendRedirect("/");
+//        resp.sendRedirect("index");
 //    }
 }
