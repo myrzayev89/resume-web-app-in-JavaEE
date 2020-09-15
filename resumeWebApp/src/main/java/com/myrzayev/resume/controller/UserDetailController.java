@@ -53,7 +53,7 @@ public class UserDetailController extends HttpServlet {
         } else if(action.equals("delete")) {
             userDao.removeUser(id);
         }
-        resp.sendRedirect("index");
+        resp.sendRedirect("/");
     }
 
 }

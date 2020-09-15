@@ -39,7 +39,7 @@ public class LoginController extends HttpServlet {
                 throw new IllegalArgumentException("Password incorrect!");
             }
             req.getSession().setAttribute("loggedInUser", user);
-            resp.sendRedirect("index");
+            resp.sendRedirect("/");
         } catch (Exception ex) {
             ControllerUtil.errorPage(resp, ex);
         }
