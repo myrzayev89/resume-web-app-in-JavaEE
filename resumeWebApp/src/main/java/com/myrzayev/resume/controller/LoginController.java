@@ -4,7 +4,6 @@ import at.favre.lib.crypto.bcrypt.BCrypt;
 import com.myrzayev.daoInter.UserDaoInter;
 import com.myrzayev.entity.User;
 import com.myrzayev.main.Context;
-import com.myrzayev.resume.util.ControllerUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -41,7 +40,8 @@ public class LoginController extends HttpServlet {
             req.getSession().setAttribute("loggedInUser", user);
             resp.sendRedirect("/");
         } catch (Exception ex) {
-            ControllerUtil.errorPage(resp, ex);
+            ex.printStackTrace();
+            resp.sendRedirect("error?msg=" + ex.getMessage());
         }
     }
 }
